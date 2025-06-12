@@ -35,7 +35,7 @@ class WebSocketClient:
             print("Disconnected, reconnecting...")
             self.connect_and_read()
             return
-        print(f"Received word from server: {message}")
+        print(f"Phản hồi từ máy chủ: {message}")
         self.connection.read_message(callback=self.on_message)
 
 def main():

@@ -36,7 +36,7 @@ def main():
     app.listen(8888)
     io_loop = tornado.ioloop.IOLoop.current()
 
-    word_selector = RandomWordSelector(['melon', 'apple', 'banana', 'orange', 'grape'])
+    word_selector = RandomWordSelector(['melon', 'apple', 'banana', 'orange', 'grape', 'grape', 'kohieu', 'hi', 'text', 'ecec', 'mẫu', 'chào', 'danh sách từ', 'ngẫu nhiên'])
 
     periodic_callback = tornado.ioloop.PeriodicCallback(
         lambda: WebSocketServer.send_message(word_selector.sample()),
